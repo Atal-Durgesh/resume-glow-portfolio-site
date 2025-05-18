@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./", // This ensures assets are loaded correctly on deployment
+  base: "/resume-glow-portfolio-site/", // Update this to match your GitHub repository name
 }));
