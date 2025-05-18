@@ -20,5 +20,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/resume-glow-portfolio-site/", // Update this to match your GitHub repository name
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    assetsDir: 'assets',
+  },
+  base: "/resume-glow-portfolio-site/", // GitHub Pages repository name
 }));
