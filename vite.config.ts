@@ -24,6 +24,13 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     sourcemap: false,
     assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
   },
   base: "/resume-glow-portfolio-site/", // GitHub Pages repository name
 }));
